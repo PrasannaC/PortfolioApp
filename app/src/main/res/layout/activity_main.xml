@@ -8,9 +8,67 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="prasanna.portfolio.com.portfolioapp.MainActivity">
-
     <TextView
+        android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/string_title_main"
+        android:textColor="#ff000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp">
+
+        <Button
+            android:id="@+id/btn_streamer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_streamer" />
+
+        <Button
+            android:id="@+id/btn_scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_scores" />
+
+        <Button
+            android:id="@+id/btn_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_library" />
+
+        <Button
+            android:id="@+id/btn_bigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_bigger" />
+
+        <Button
+            android:id="@+id/btn_reader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_reader" />
+
+        <Button
+            android:id="@+id/btn_capstone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/string_btn_capstone"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
 </RelativeLayout>
